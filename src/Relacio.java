@@ -8,4 +8,8 @@ public class Relacio {
     public void canviarTipusRelacio(String nouTipus) {
         this.tipusRelacio = nouTipus;
     }
+
+    public String getTipusRelacio() {
+        return tipusRelacio;
+    }
 }

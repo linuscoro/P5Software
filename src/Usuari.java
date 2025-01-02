@@ -74,5 +74,11 @@ public class Usuari {
         return textos;
     }
 
+    public Map<String,Relacio> getRelacionsMap() {
+        return relacions;
+    }
 
+    public String getId() {
+        return id;
+    }
 }
