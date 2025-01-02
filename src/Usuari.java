@@ -73,4 +73,6 @@ public class Usuari {
     public List<Text> getTextos() {
         return textos;
     }
+
+
 }

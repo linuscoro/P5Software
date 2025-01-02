@@ -99,8 +99,23 @@ public class Hatebuck {
                 case 3:
                     System.out.print("Introdueix l'usuari amb qui vols establir relació: ");
                     String usuariRelacio = scanner.nextLine();
-                    System.out.print("Introdueix el tipus de relació: ");
-                    String tipusRelacio = scanner.nextLine();
+                    System.out.println("Selecciona el tipus de relació:");
+                    System.out.println("1. Amic");
+                    System.out.println("2. Conegut");
+                    System.out.println("3. Saludat");
+                    System.out.print("Opció: ");
+                    int tipusRelacioOpcio = scanner.nextInt();
+                    scanner.nextLine();
+                    String tipusRelacio;
+                    switch (tipusRelacioOpcio) {
+                        case 1: tipusRelacio = "Amic";
+                        case 2: tipusRelacio = "Conegut";
+                        case 3: tipusRelacio = "Saludat";
+                        default : {
+                            System.out.println("Opció no vàlida. Assignant relació com a 'Saludat'.");
+                            tipusRelacio = "Saludat";
+                        }
+                    }
                     usuari.establirRelacio(usuariRelacio, tipusRelacio);
                     System.out.println("Relació establerta amb l'usuari.");
                     break;
