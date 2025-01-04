@@ -1,2 +1,3 @@
-public class MostrarParaulaStrategy {
+public interface MostrarParaulaStrategy {
+    public String mostrar();
 }
